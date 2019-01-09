@@ -29,6 +29,7 @@
             .navbar-link {
                 padding: 15px 15px 0 15px;
                 float: left;
+                color: orange;
             }
             .leftmost-link {
                 padding-left: 50px !important;
@@ -66,10 +67,10 @@
     </head>
     <body>
         <div id="Navbar">
-            <a href="index.html"><p class="navbar-link leftmost-link">~Home</p></a>
-            <a href="index.html"><p class="navbar-link">$About</p></a>
-            <a href="index.html"><p class="navbar-link">$Projects</p></a>
-            <a href="index.html"><p class="navbar-link">$Contact</p></a>
+            <%= link_to "~Home", root_path, class: "navbar-link leftmost-link" %>
+            <%= link_to "$About", root_path, class: "navbar-link" %>
+            <%= link_to "$Projects", root_path, class: "navbar-link" %>
+            <%= link_to "$Contact", root_path, class: "navbar-link" %>
         </div>
         <div id="main-content">
             <div id="main-content-header">
